@@ -519,3 +519,20 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+
+
+
+
+
+/*
+
+|--------------------------------------------------------------------------
+| Hooks to be enabled/disabled(TRUE/FALSE)
+|--------------------------------------------------------------------------
+|
+| It allows us to enable/disable hook function
+| 
+|
+*/
+$config['enable_hooks'] = TRUE;
