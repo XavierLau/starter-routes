@@ -30,11 +30,11 @@ class Application extends CI_Controller
 	/**
 	 * Render this page
 	 */
-	function render($template = 'template')
+	function render($template = '_template')
 	{
         $this->data['menubar'] = $this->parser->parse('_menubar', $this->config->item('menu_choices'),true);
 		$this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
-		$this->parser->parse('template', $this->data);
+		$this->parser->parse('_template', $this->data);
 	}
 
 }
