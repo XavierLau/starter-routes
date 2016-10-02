@@ -28,18 +28,18 @@ class First extends Application
 	}
 
 	/**
-	 * Mark Russel quote
-	*/
-	public function gimme($param)
-	{
-		// this is the view we want shown
-		$this->data['pagebody'] = 'justone';
+		* Mark Russell quote
+		*/
+		public function gimme($param)
+		{
+			// this is the view we want shown
+			$this->data['pagebody'] = 'justone';
 
-		$record = $this->quotes->get($param);
+			$record = $this->quotes->get($param);
 
-		//create model for our view by merging the record found int the data model
-		$this->data = array_merge($this->data, $record);
+			//create model for our view by merging the record found int the data model
+			$this->data = array_merge($this->data, $record);
 
-		$this->render();
-	}
+			$this->render();
+		}
 }
