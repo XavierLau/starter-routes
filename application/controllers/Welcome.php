@@ -30,4 +30,20 @@ class Welcome extends Application
 		$this->render();
 	}
 
+	/**
+	 * Elaine Boosler's quote
+	*/
+	public function shucks()
+	{
+		// this is the view we want shown
+		$this->data['pagebody'] = 'justone';
+
+		//retrieve Bob Monkhouse's record
+		$record = $this->quotes->get(2);
+		
+		//create model for our view by merging the record found into the data model
+		$this->data = array_merge($this->data, $record);
+
+		$this->render();
+	}
 }
