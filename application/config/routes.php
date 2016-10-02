@@ -57,7 +57,7 @@ $route['dunno'] = function() {
 	readfile($source); // dish it
 	die(); // and we don't have to go any further
 };
-$route['show/3'] = 'first/gimme/3';
+$route['show/(:num)'] = 'first/gimme/$1';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
