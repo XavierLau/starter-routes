@@ -62,3 +62,5 @@ $route['lock/(:any)/(:any)'] = 'welcome/shucks';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['(^comp\d+)/:any'] = 'Wise/bingo';
+$route['sleep'] = 'first/zzz';
