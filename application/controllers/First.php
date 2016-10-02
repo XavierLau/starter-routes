@@ -11,7 +11,7 @@ class First extends Application
 	}
 
 	/**
-	 * Homepage for our app
+	 * Bob Monkhouse quote
 	 */
 	public function index()
 	{
@@ -27,4 +27,19 @@ class First extends Application
 		$this->render();
 	}
 
+	/**
+	 * Mark Russel quote
+	*/
+	public function gimme($param)
+	{
+		// this is the view we want shown
+		$this->data['pagebody'] = 'justone';
+
+		$record = $this->quotes->get($param);
+
+		//create model for our view by merging the record found int the data model
+		$this->data = array_merge($this->data, $record);
+
+		$this->render();
+	}
 }
