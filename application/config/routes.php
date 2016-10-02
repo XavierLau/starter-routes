@@ -59,6 +59,7 @@ $route['dunno'] = function() {
 };
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['lock/(:any)/(:any)'] = 'welcome/shucks';
+$route['([a-zA-Z]{4})/bingo'] = '/bingo';
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
